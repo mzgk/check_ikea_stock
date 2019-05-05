@@ -1,3 +1,4 @@
+import sys
 import requests
 from bs4 import BeautifulSoup
 
@@ -36,5 +37,5 @@ def main(store_code: str):
 
 
 if __name__ == '__main__':
-    code = '70366289'
-    main(code)
+    # ikea.py 商品コード
+    main(sys.argv[1])
