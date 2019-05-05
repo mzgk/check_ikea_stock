@@ -33,22 +33,10 @@ $ ikea.py 商品コード
 - 店舗、在庫、次回入荷日を出力する
 
 
-## IKEA-API
-### 在庫管理URL
-- https://www.ikea.com/jp/ja/catalog/availability/商品コード8桁/
-
+## IKEA
 ### XML要素
 - 店舗コード
   - `<localStore buCode="447" timeZoneOffsetInMillis="32400000">`
-  - "447" => "TokyoBay"
-  - "448" => "港北"
-  - "887" => "新三郷"
-  - "486" => "神戸"
-  - "392" => "仙台"
-  - "509" => "長久手"
-  - "496" => "鶴浜"
-  - "189" => "福岡新宮"
-  - "359" => "立川"
 - 次回入荷日 ※在庫がある場合は要素なし
   - `<restockDate>2019-05-09</restockDate>`
 - 在庫数
